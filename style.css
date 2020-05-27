@@ -1,0 +1,47 @@
+body{
+    background-color: gray;
+}
+
+.body *{
+    border: solid;
+}
+h1{
+    color: black;
+    background-color: white;
+    border: solid;
+}
+h2{
+    color: yellow   ;
+    background-color:black;
+}
+
+p,h1{
+    text-align: center;
+}
+.tags{
+    background-color: red;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.photos{
+    text-align: center;
+       
+}
+.photos{
+    position: relative;
+}
+.photos p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.photos:hover p{
+    opacity: 1;  
+    
+}
+.photos:hover img{
+    opacity: 0.33;
+}
